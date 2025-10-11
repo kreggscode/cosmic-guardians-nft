@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { config } from './config/wagmi';
 import { Toaster } from 'sonner';
 import Navbar from './components/Navbar';
+import WalletConnectModal from './components/WalletConnectModal';
 import HomePage from './pages/HomePage';
 import MintPage from './pages/MintPage';
 import MyNFTsPage from './pages/MyNFTsPage';
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/my-nfts" element={<MyNFTsPage />} />
               </Routes>
             </main>
+            <WalletConnectModal />
             <Toaster position="bottom-right" />
           </div>
         </Router>
