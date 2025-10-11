@@ -22,6 +22,13 @@ export class NFTController {
         
         // Convert to NFT format
         const nfts = nftsData.map((nft: any) => {
+          // If price is already in wei (big number), convert to ETH
+          let priceInEth = nft.price || '0.05';
+          if (priceInEth.length > 10) {
+            // It's in wei, convert to ETH
+            priceInEth = ethers.formatEther(priceInEth);
+          }
+          
           return {
             tokenId: nft.tokenId,
             name: nft.name,
@@ -32,8 +39,8 @@ export class NFTController {
             metadataHash: nft.metadataHash,
             metadataGateway: nft.metadataGateway,
             attributes: nft.attributes,
-            price: nft.price || '0.05',
-            priceWei: ethers.parseEther(nft.price || '0.05').toString(),
+            price: priceInEth,
+            priceWei: ethers.parseEther(priceInEth).toString(),
             rarity: nft.attributes?.find((a: any) => a.trait_type === 'Rarity')?.value || 'Common',
             minted: MintedNFTTracker.isMinted(nft.tokenId),
             owner: null,
@@ -95,43 +102,49 @@ export class NFTController {
     try {
       const { address } = req.params;
 
-      // Try to load from uploaded.json (REAL IPFS data)
+      // Try to load from nfts.json
       try {
-        const uploadedPath = path.join(__dirname, '../../../art-generator/uploaded.json');
-        const uploadedData = JSON.parse(fs.readFileSync(uploadedPath, 'utf-8'));
+        const nftsPath = path.join(__dirname, '../data/nfts.json');
+        const nftsData = JSON.parse(fs.readFileSync(nftsPath, 'utf-8'));
 
-        // Convert uploaded IPFS data to NFT format and filter by owner
-        const ownedNFTs = Object.entries(uploadedData.metadata)
-          .map(([tokenId, data]: [string, any]) => {
-            const imageHash = uploadedData.images[tokenId]?.hash;
+        // Convert to NFT format and filter by owner
+        const ownedNFTs = nftsData
+          .map((nft: any) => {
+            // Convert wei to ETH if needed
+            let priceInEth = nft.price || '0.05';
+            if (typeof priceInEth === 'string' && priceInEth.length > 10) {
+              priceInEth = ethers.formatEther(priceInEth);
+            }
+
             return {
-              tokenId: Number(tokenId),
-              name: data.metadata.name,
-              description: data.metadata.description,
-              // Use IPFS.io gateway (better rate limiting than Pinata)
-              image: imageHash ? `https://ipfs.io/ipfs/${imageHash}` : data.metadata.image,
-              imageHash: imageHash,
-              metadata: data.url,
-              metadataHash: data.hash,
-              metadataGateway: data.gateway,
-              attributes: data.metadata.attributes,
-              price: data.metadata.price || '0.05', // Return as readable ETH string
-              priceWei: ethers.parseEther(data.metadata.price || '0.05').toString(), // Keep wei for contract
-              rarity: data.metadata.attributes.find((a: any) => a.trait_type === 'Rarity')?.value || 'Common',
-              minted: MintedNFTTracker.isMinted(Number(tokenId)), // Check if minted
-              owner: MintedNFTTracker.isMinted(Number(tokenId)) ? MintedNFTTracker.getMintedNFTs()[tokenId]?.owner : null,
-              transactionHash: MintedNFTTracker.isMinted(Number(tokenId)) ? MintedNFTTracker.getMintedNFTs()[tokenId]?.transactionHash : null,
-              mintedAt: MintedNFTTracker.isMinted(Number(tokenId)) ? MintedNFTTracker.getMintedNFTs()[tokenId]?.mintedAt : null,
+              tokenId: nft.tokenId,
+              name: nft.name,
+              description: nft.description,
+              image: nft.image,
+              imageHash: nft.imageHash,
+              metadata: nft.metadata,
+              metadataHash: nft.metadataHash,
+              metadataGateway: nft.metadataGateway,
+              attributes: nft.attributes,
+              price: priceInEth,
+              priceWei: ethers.parseEther(priceInEth).toString(),
+              rarity: nft.attributes?.find((a: any) => a.trait_type === 'Rarity')?.value || 'Common',
+              minted: MintedNFTTracker.isMinted(nft.tokenId),
+              owner: MintedNFTTracker.isMinted(nft.tokenId) ? MintedNFTTracker.getMintedNFTs()[nft.tokenId]?.owner : null,
+              transactionHash: MintedNFTTracker.isMinted(nft.tokenId) ? MintedNFTTracker.getMintedNFTs()[nft.tokenId]?.transactionHash : null,
+              mintedAt: MintedNFTTracker.isMinted(nft.tokenId) ? MintedNFTTracker.getMintedNFTs()[nft.tokenId]?.mintedAt : null,
             };
           })
-          .filter(nft => nft.minted && nft.owner?.toLowerCase() === address.toLowerCase());
+          .filter((nft: any) => nft.minted && nft.owner?.toLowerCase() === address.toLowerCase());
 
         return res.json({ success: true, data: ownedNFTs });
       } catch (fileError) {
-        // If uploaded.json doesn't exist, try MongoDB
-        const nfts = await NFTModel.find({ owner: address.toLowerCase(), minted: true });
-
-        res.json({ success: true, data: nfts });
+        // If nfts.json doesn't exist, return error
+        console.error('nfts.json not found:', fileError);
+        return res.status(500).json({ 
+          success: false, 
+          error: 'NFT data not available' 
+        });
       }
     } catch (error: any) {
       res.status(500).json({ success: false, error: error.message });
@@ -216,21 +229,26 @@ export class NFTController {
         return res.status(400).json({ success: false, error: 'Buyer address required' });
       }
 
-      // Try to get NFT from uploaded.json
+      // Try to get NFT from nfts.json
       try {
-        const uploadedPath = path.join(__dirname, '../../../art-generator/uploaded.json');
-        const uploadedData = JSON.parse(fs.readFileSync(uploadedPath, 'utf-8'));
+        const nftsPath = path.join(__dirname, '../data/nfts.json');
+        const nftsData = JSON.parse(fs.readFileSync(nftsPath, 'utf-8'));
         
-        const nftData = uploadedData.metadata[tokenId];
+        const nftData = nftsData.find((n: any) => n.tokenId === Number(tokenId));
         if (!nftData) {
           return res.status(404).json({ success: false, error: 'NFT not found' });
         }
 
-        // Get NFT details
+        // Get NFT details - convert wei to ETH if needed
+        let priceInEth = nftData.price || '0.05';
+        if (typeof priceInEth === 'string' && priceInEth.length > 10) {
+          priceInEth = ethers.formatEther(priceInEth);
+        }
+
         const nft = {
           tokenId: Number(tokenId),
-          price: nftData.metadata.price || '0.05',
-          metadata: nftData.url,
+          price: priceInEth,
+          metadata: nftData.metadata,
           minted: false,
         };
 
