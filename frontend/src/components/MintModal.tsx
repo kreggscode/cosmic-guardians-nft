@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
-import { parseEther } from 'viem';
-import { X, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { X, Loader2, CheckCircle } from 'lucide-react';
 import { NFT, getVoucher, markAsMinted, getSupportedCurrencies, Currency } from '@/lib/api';
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from '@/config/contract';
 import { formatPrice, ipfsToGateway } from '@/lib/utils';
