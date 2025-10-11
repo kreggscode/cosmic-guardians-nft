@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #9 - Magenta Phantom",
+  "description": "A phantom guardian dwelling in deep space, wielding mysterious shadow powers.",
+  "image": "9.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/9",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Magenta Phantom"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Magenta"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Shadow Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Deep Space"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 55
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.12"
+}

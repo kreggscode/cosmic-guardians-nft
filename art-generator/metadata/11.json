@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #11 - Violet Sovereign",
+  "description": "Sovereign of the violet cosmos, commanding mystic energies beyond mortal comprehension.",
+  "image": "11.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/11",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Violet Sovereign"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Purple"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Mystic Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Nebula Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 91
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.08"
+}

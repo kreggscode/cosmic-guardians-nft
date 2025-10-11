@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #1 - Shadow Sentinel",
+  "description": "A mysterious guardian from the depths of the Shadow Nebula, wielding the ancient power of darkness and silver light.",
+  "image": "1.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/1",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Shadow Sentinel"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Black with Silver Accents"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Shadow Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Spiral Galaxy"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 77
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.12"
+}

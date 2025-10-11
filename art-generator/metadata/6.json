@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #6 - Emerald Keeper",
+  "description": "Guardian of life and nature, channeling the essence of cosmic forests and living nebulas.",
+  "image": "6.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/6",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Emerald Keeper"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Emerald"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Nature Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Deep Galaxy"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 71
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.08"
+}

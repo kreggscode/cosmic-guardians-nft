@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #3 - Bronze Warrior",
+  "description": "A fierce warrior from the Bronze Sector, commanding flames and fire in epic cosmic battles.",
+  "image": "3.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/3",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Bronze Warrior"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Bronze"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Fire Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Purple Nebula"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 56
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.05"
+}

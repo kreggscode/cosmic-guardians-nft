@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #14 - Plasma Sentinel",
+  "description": "Guardian of plasma fields, controlling the raw energy that powers the stars.",
+  "image": "14.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/14",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Plasma Sentinel"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Teal"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Plasma Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Cosmic Nebula"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 50
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.08"
+}

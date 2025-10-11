@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #12 - Scarlet Avenger",
+  "description": "The Scarlet Avenger, fueled by cosmic rage and an unbreakable will to protect.",
+  "image": "12.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/12",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Scarlet Avenger"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Rage Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Nebula Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 76
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.05"
+}

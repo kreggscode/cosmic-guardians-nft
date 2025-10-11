@@ -1,0 +1,8 @@
+{
+  "name": "Cosmic Guardians",
+  "description": "A legendary collection of 15 unique cosmic warriors, each protecting different sectors of the universe with their unique powers and abilities.",
+  "image": "collection.jpg",
+  "external_link": "https://cosmicguardians.io",
+  "seller_fee_basis_points": 500,
+  "fee_recipient": "0x0000000000000000000000000000000000000000"
+}

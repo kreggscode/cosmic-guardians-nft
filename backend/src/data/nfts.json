@@ -1,0 +1,287 @@
+[
+  {
+    "tokenId": 1,
+    "name": "Cosmic Guardian #1 - Shadow Sentinel",
+    "description": "A mysterious guardian from the depths of the Shadow Nebula, wielding the ancient power of darkness and silver light.",
+    "image": "ipfs://QmcVL5pgRBjwWgPLVJREefq1dri6czygLwXmf1zc9qQiNt",
+    "metadata": "ipfs://QmYnkv9uDFGfqKBajJFhvGdosAtjJ41DNBZ97E8XP2GZq7",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Shadow Sentinel"},
+      {"trait_type": "Armor Type", "value": "Black with Silver Accents"},
+      {"trait_type": "Energy Type", "value": "Shadow Energy"},
+      {"trait_type": "Background", "value": "Spiral Galaxy"},
+      {"trait_type": "Rarity", "value": "Epic"},
+      {"trait_type": "Power Level", "value": 77},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "120000000000000000",
+    "rarity": "Epic",
+    "minted": false
+  },
+  {
+    "tokenId": 2,
+    "name": "Cosmic Guardian #2 - Azure Protector",
+    "description": "Guardian of the Azure Nebula, channeling pure cosmic energy to defend the galaxies from chaos.",
+    "image": "ipfs://QmcVL5pgRBjwWgPLVJREefq1dri6czygLwXmf1zc9qQiNt",
+    "metadata": "ipfs://QmRAXWYUHYorRrJM2jsBthLLDUFCP5LYYkLEURC6uR7uQr",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Azure Protector"},
+      {"trait_type": "Armor Type", "value": "Blue"},
+      {"trait_type": "Energy Type", "value": "Cosmic Energy"},
+      {"trait_type": "Background", "value": "Nebula Starfield"},
+      {"trait_type": "Rarity", "value": "Rare"},
+      {"trait_type": "Power Level", "value": 78},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "80000000000000000",
+    "rarity": "Rare",
+    "minted": false
+  },
+  {
+    "tokenId": 3,
+    "name": "Cosmic Guardian #3 - Bronze Warrior",
+    "description": "A fierce warrior from the Bronze Sector, commanding flames and fire in epic cosmic battles.",
+    "image": "ipfs://QmUWGUi24XCCYjnyeTVeqnam2GqzRq1Hv6QN8JiNa47Qi2",
+    "metadata": "ipfs://QmT4bxQHPfDY24Qwtmp35nvsTJysHTsTcvXsQ58eWTLgnx",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Bronze Warrior"},
+      {"trait_type": "Armor Type", "value": "Bronze"},
+      {"trait_type": "Energy Type", "value": "Fire Energy"},
+      {"trait_type": "Background", "value": "Purple Nebula"},
+      {"trait_type": "Rarity", "value": "Uncommon"},
+      {"trait_type": "Power Level", "value": 56},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "50000000000000000",
+    "rarity": "Uncommon",
+    "minted": false
+  },
+  {
+    "tokenId": 4,
+    "name": "Cosmic Guardian #4 - Crimson Destroyer",
+    "description": "The legendary Crimson Destroyer, wielding molten lava energy from the core of dying stars.",
+    "image": "ipfs://QmPUe66uTbU8WY33J7KRPjQR8KoRp843vRuVtkdvotRtmy",
+    "metadata": "ipfs://QmWStVsoVQoHeZ7uHUUtqntUjFi4Ry89S68s9URwtciXaz",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Crimson Destroyer"},
+      {"trait_type": "Armor Type", "value": "Crimson"},
+      {"trait_type": "Energy Type", "value": "Lava Energy"},
+      {"trait_type": "Background", "value": "Fiery Starfield"},
+      {"trait_type": "Rarity", "value": "Epic"},
+      {"trait_type": "Power Level", "value": 84},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "120000000000000000",
+    "rarity": "Epic",
+    "minted": false
+  },
+  {
+    "tokenId": 5,
+    "name": "Cosmic Guardian #5 - Frost Guardian",
+    "description": "Master of ice and frost, protecting the frozen sectors of the cosmos with crystalline power.",
+    "image": "ipfs://Qmd1HgbCfBXjikkUMEMjMG29CwwAH2rdqp15jYgLJZc9JE",
+    "metadata": "ipfs://QmRY2wGSqrkrGtvpuBtBibyEmocVYt9fdgZ1Pcs86WnjGS",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Frost Guardian"},
+      {"trait_type": "Armor Type", "value": "Cyan"},
+      {"trait_type": "Energy Type", "value": "Ice Energy"},
+      {"trait_type": "Background", "value": "Nebula Cosmos"},
+      {"trait_type": "Rarity", "value": "Rare"},
+      {"trait_type": "Power Level", "value": 97},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "80000000000000000",
+    "rarity": "Rare",
+    "minted": false
+  },
+  {
+    "tokenId": 6,
+    "name": "Cosmic Guardian #6 - Emerald Keeper",
+    "description": "Guardian of life and nature, channeling the essence of cosmic forests and living nebulas.",
+    "image": "ipfs://QmXbcs3ng9Bv4Aq1TSbPurxzMbgm1WRcDdmzkGKU1nxHab",
+    "metadata": "ipfs://QmWZjcteHAe2UoHrVYjVG3K6t43inhM4bibYQLrwWrZFuw",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Emerald Keeper"},
+      {"trait_type": "Armor Type", "value": "Emerald"},
+      {"trait_type": "Energy Type", "value": "Nature Energy"},
+      {"trait_type": "Background", "value": "Deep Galaxy"},
+      {"trait_type": "Rarity", "value": "Rare"},
+      {"trait_type": "Power Level", "value": 71},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "80000000000000000",
+    "rarity": "Rare",
+    "minted": false
+  },
+  {
+    "tokenId": 7,
+    "name": "Cosmic Guardian #7 - Golden Champion",
+    "description": "The supreme Golden Champion, blessed with divine cosmic energy and unmatched power.",
+    "image": "ipfs://QmRxoQWm63uJNLbYtpdoohRv2EKkU6KwvEL3saRHUSDjy4",
+    "metadata": "ipfs://QmbjaYcyGUXr7XmBJT6r1qYau1tCnJNknfEjf9dbCY3Ngi",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Golden Champion"},
+      {"trait_type": "Armor Type", "value": "Golden"},
+      {"trait_type": "Energy Type", "value": "Divine Energy"},
+      {"trait_type": "Background", "value": "Nebula Starfield"},
+      {"trait_type": "Rarity", "value": "Legendary"},
+      {"trait_type": "Power Level", "value": 75},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "200000000000000000",
+    "rarity": "Legendary",
+    "minted": false
+  },
+  {
+    "tokenId": 8,
+    "name": "Cosmic Guardian #8 - Verdant Warden",
+    "description": "Warden of the verdant galaxies, protecting all living cosmic entities with life energy.",
+    "image": "ipfs://QmaQghKgMtu8qKw4jnqyxHNTdWQiraX3xcEJ5YS3RwJhRm",
+    "metadata": "ipfs://QmUNsrQAsAYaGmiVcY2uW4MsixZE3VXCqYyYPusFb2Dusx",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Verdant Warden"},
+      {"trait_type": "Armor Type", "value": "Green"},
+      {"trait_type": "Energy Type", "value": "Life Energy"},
+      {"trait_type": "Background", "value": "Nebula Starfield"},
+      {"trait_type": "Rarity", "value": "Uncommon"},
+      {"trait_type": "Power Level", "value": 81},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "50000000000000000",
+    "rarity": "Uncommon",
+    "minted": false
+  },
+  {
+    "tokenId": 9,
+    "name": "Cosmic Guardian #9 - Magenta Phantom",
+    "description": "A phantom guardian dwelling in deep space, wielding mysterious shadow powers.",
+    "image": "ipfs://QmPJtSCcCzSAV3yUUEqevBy9gx17VUKqwZWfLEtkzcT2qP",
+    "metadata": "ipfs://QmSRyxmgoD21jmxUh3JT6XFENmQh5a8rfQWFGEEKoSUSY2",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Magenta Phantom"},
+      {"trait_type": "Armor Type", "value": "Magenta"},
+      {"trait_type": "Energy Type", "value": "Shadow Energy"},
+      {"trait_type": "Background", "value": "Deep Space"},
+      {"trait_type": "Rarity", "value": "Epic"},
+      {"trait_type": "Power Level", "value": 55},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "120000000000000000",
+    "rarity": "Epic",
+    "minted": false
+  },
+  {
+    "tokenId": 10,
+    "name": "Cosmic Guardian #10 - Inferno Knight",
+    "description": "The Inferno Knight, blazing through stardust clouds with unstoppable fire energy.",
+    "image": "ipfs://QmW6xiqcCiVUrKWXmqNFJAHvjEKUP4hSPmJkCrQJMNvYhH",
+    "metadata": "ipfs://QmYbLB2eNrQuEzgbKGeoJSa1u1YUrLxMomZeZ2nbmKVFyk",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Inferno Knight"},
+      {"trait_type": "Armor Type", "value": "Orange"},
+      {"trait_type": "Energy Type", "value": "Fire Energy"},
+      {"trait_type": "Background", "value": "Stardust Nebula"},
+      {"trait_type": "Rarity", "value": "Uncommon"},
+      {"trait_type": "Power Level", "value": 81},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "50000000000000000",
+    "rarity": "Uncommon",
+    "minted": false
+  },
+  {
+    "tokenId": 11,
+    "name": "Cosmic Guardian #11 - Violet Sovereign",
+    "description": "Sovereign of the violet cosmos, commanding mystic energies beyond mortal comprehension.",
+    "image": "ipfs://QmTJytyFpjwjMUYCfgsUTYzVuSQjQZvsoXoft2M5L9nPFw",
+    "metadata": "ipfs://QmP4ssYampeeBRL1jPFnZ9zp8f51QCK2gaWYywGYgA3FVM",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Violet Sovereign"},
+      {"trait_type": "Armor Type", "value": "Purple"},
+      {"trait_type": "Energy Type", "value": "Mystic Energy"},
+      {"trait_type": "Background", "value": "Nebula Starfield"},
+      {"trait_type": "Rarity", "value": "Rare"},
+      {"trait_type": "Power Level", "value": 91},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "80000000000000000",
+    "rarity": "Rare",
+    "minted": false
+  },
+  {
+    "tokenId": 12,
+    "name": "Cosmic Guardian #12 - Scarlet Avenger",
+    "description": "The Scarlet Avenger, fueled by cosmic rage and an unbreakable will to protect.",
+    "image": "ipfs://QmWfTo9jhXg4brwXn6FE9F76HmptQayPNHxGTG2te3ZqKS",
+    "metadata": "ipfs://QmQh8g9SxYweot6Le6WdTFz1hxMCWRkh74yLnkK8E9NzYc",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Scarlet Avenger"},
+      {"trait_type": "Armor Type", "value": "Red"},
+      {"trait_type": "Energy Type", "value": "Rage Energy"},
+      {"trait_type": "Background", "value": "Nebula Starfield"},
+      {"trait_type": "Rarity", "value": "Uncommon"},
+      {"trait_type": "Power Level", "value": 76},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "50000000000000000",
+    "rarity": "Uncommon",
+    "minted": false
+  },
+  {
+    "tokenId": 13,
+    "name": "Cosmic Guardian #13 - Storm Bringer",
+    "description": "Master of cosmic storms, wielding lightning from the heart of swirling galaxies.",
+    "image": "ipfs://QmPTZo9i6RGgyzjL32W5n5cPrnniriX16eHydUByvPzwFX",
+    "metadata": "ipfs://QmZ4MjWGLVjyZRJJvmG6ySiRRv1XcR92dmDJmuy9huXGeD",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Storm Bringer"},
+      {"trait_type": "Armor Type", "value": "Silver"},
+      {"trait_type": "Energy Type", "value": "Lightning Energy"},
+      {"trait_type": "Background", "value": "Swirling Galaxy"},
+      {"trait_type": "Rarity", "value": "Epic"},
+      {"trait_type": "Power Level", "value": 62},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "120000000000000000",
+    "rarity": "Epic",
+    "minted": false
+  },
+  {
+    "tokenId": 14,
+    "name": "Cosmic Guardian #14 - Plasma Sentinel",
+    "description": "Guardian of plasma fields, controlling the raw energy that powers the stars.",
+    "image": "ipfs://QmW2tsyVGaYCxAC4ccs1ttdAseb9am73h6FT2m5fjDMy8n",
+    "metadata": "ipfs://QmQPZA3pfSdZ8gAo66qyNk8sWqxjZpRCL6niW5wm47tYUi",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Plasma Sentinel"},
+      {"trait_type": "Armor Type", "value": "Teal"},
+      {"trait_type": "Energy Type", "value": "Plasma Energy"},
+      {"trait_type": "Background", "value": "Cosmic Nebula"},
+      {"trait_type": "Rarity", "value": "Rare"},
+      {"trait_type": "Power Level", "value": 50},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "80000000000000000",
+    "rarity": "Rare",
+    "minted": false
+  },
+  {
+    "tokenId": 15,
+    "name": "Cosmic Guardian #15 - Celestial Paragon",
+    "description": "The ultimate Celestial Paragon, embodiment of pure light and cosmic perfection.",
+    "image": "ipfs://QmXypgCGdeYsejPFBehmc98F6bNNWTXBnCHRFDxiMbCXfz",
+    "metadata": "ipfs://QmWEbjydT39xqm7H5tgxQtK83zb1GWMstDQp68gj4Hcfv9",
+    "attributes": [
+      {"trait_type": "Guardian Name", "value": "Celestial Paragon"},
+      {"trait_type": "Armor Type", "value": "White"},
+      {"trait_type": "Energy Type", "value": "Light Energy"},
+      {"trait_type": "Background", "value": "Galactic Constellations"},
+      {"trait_type": "Rarity", "value": "Legendary"},
+      {"trait_type": "Power Level", "value": 64},
+      {"trait_type": "Generation", "value": "Genesis"}
+    ],
+    "price": "200000000000000000",
+    "rarity": "Legendary",
+    "minted": false
+  }
+]

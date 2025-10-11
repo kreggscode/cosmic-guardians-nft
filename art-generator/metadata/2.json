@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #2 - Azure Protector",
+  "description": "Guardian of the Azure Nebula, channeling pure cosmic energy to defend the galaxies from chaos.",
+  "image": "2.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/2",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Azure Protector"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Cosmic Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Nebula Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 78
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.08"
+}

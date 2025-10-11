@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #10 - Inferno Knight",
+  "description": "The Inferno Knight, blazing through stardust clouds with unstoppable fire energy.",
+  "image": "10.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/10",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Inferno Knight"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Fire Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Stardust Nebula"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 81
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.05"
+}

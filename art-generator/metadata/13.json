@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #13 - Storm Bringer",
+  "description": "Master of cosmic storms, wielding lightning from the heart of swirling galaxies.",
+  "image": "13.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/13",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Storm Bringer"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Silver"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Lightning Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Swirling Galaxy"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 62
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.12"
+}

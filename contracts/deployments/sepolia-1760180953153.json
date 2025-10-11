@@ -1,0 +1,12 @@
+{
+  "network": "sepolia",
+  "contractAddress": "0x2cd2936c4D34B926100ceE1EcF279E6E04ba5234",
+  "deployer": "0x6299B4E32924E530A23e7031ebe375146029a80d",
+  "name": "My Awesome NFT Collection",
+  "symbol": "MANFT",
+  "mintPrice": "50000000000000000",
+  "maxSupply": 10000,
+  "signerAddress": "0x6299B4E32924E530A23e7031ebe375146029a80d",
+  "deployedAt": "2025-10-11T11:09:12.931Z",
+  "blockNumber": 9388774
+}

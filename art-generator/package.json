@@ -1,0 +1,17 @@
+{
+  "name": "nft-art-generator",
+  "version": "1.0.0",
+  "description": "Generate NFT artwork from layers",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js",
+    "upload": "node upload-to-ipfs.js",
+    "import": "node import-to-backend.js"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "fs-extra": "^11.2.0",
+    "axios": "^1.6.2",
+    "form-data": "^4.0.0"
+  }
+}

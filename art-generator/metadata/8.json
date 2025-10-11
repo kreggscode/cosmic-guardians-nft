@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #8 - Verdant Warden",
+  "description": "Warden of the verdant galaxies, protecting all living cosmic entities with life energy.",
+  "image": "8.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/8",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Verdant Warden"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Life Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Nebula Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 81
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.05"
+}

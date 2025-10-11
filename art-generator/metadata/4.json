@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #4 - Crimson Destroyer",
+  "description": "The legendary Crimson Destroyer, wielding molten lava energy from the core of dying stars.",
+  "image": "4.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/4",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Crimson Destroyer"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Crimson"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Lava Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Fiery Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 84
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.12"
+}

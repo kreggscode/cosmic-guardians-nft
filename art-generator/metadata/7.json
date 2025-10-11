@@ -1,0 +1,37 @@
+{
+  "name": "Cosmic Guardian #7 - Golden Champion",
+  "description": "The supreme Golden Champion, blessed with divine cosmic energy and unmatched power.",
+  "image": "7.jpg",
+  "external_url": "https://cosmicguardians.io/guardian/7",
+  "attributes": [
+    {
+      "trait_type": "Guardian Name",
+      "value": "Golden Champion"
+    },
+    {
+      "trait_type": "Armor Type",
+      "value": "Golden"
+    },
+    {
+      "trait_type": "Energy Type",
+      "value": "Divine Energy"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Nebula Starfield"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": 75
+    },
+    {
+      "trait_type": "Generation",
+      "value": "Genesis"
+    }
+  ],
+  "price": "0.20"
+}
