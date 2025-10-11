@@ -15,29 +15,27 @@ export class NFTController {
     try {
       const { minted, limit = 50, offset = 0 } = req.query;
 
-      // Try to load from uploaded.json (REAL IPFS data)
+      // Try to load from nfts.json (backend data)
       try {
-        const uploadedPath = path.join(__dirname, '../../../art-generator/uploaded.json');
-        const uploadedData = JSON.parse(fs.readFileSync(uploadedPath, 'utf-8'));
+        const nftsPath = path.join(__dirname, '../data/nfts.json');
+        const nftsData = JSON.parse(fs.readFileSync(nftsPath, 'utf-8'));
         
-        // Convert uploaded IPFS data to NFT format
-        const nfts = Object.entries(uploadedData.metadata).map(([tokenId, data]: [string, any]) => {
-          const imageHash = uploadedData.images[tokenId]?.hash;
+        // Convert to NFT format
+        const nfts = nftsData.map((nft: any) => {
           return {
-            tokenId: Number(tokenId),
-            name: data.metadata.name,
-            description: data.metadata.description,
-            // Use IPFS.io gateway (better rate limiting than Pinata)
-            image: imageHash ? `https://ipfs.io/ipfs/${imageHash}` : data.metadata.image,
-            imageHash: imageHash,
-            metadata: data.url,
-            metadataHash: data.hash,
-            metadataGateway: data.gateway,
-            attributes: data.metadata.attributes,
-            price: data.metadata.price || '0.05', // Return as readable ETH string
-            priceWei: ethers.parseEther(data.metadata.price || '0.05').toString(), // Keep wei for contract
-            rarity: data.metadata.attributes.find((a: any) => a.trait_type === 'Rarity')?.value || 'Common',
-            minted: MintedNFTTracker.isMinted(Number(tokenId)), // Check if minted
+            tokenId: nft.tokenId,
+            name: nft.name,
+            description: nft.description,
+            image: nft.image,
+            imageHash: nft.imageHash,
+            metadata: nft.metadata,
+            metadataHash: nft.metadataHash,
+            metadataGateway: nft.metadataGateway,
+            attributes: nft.attributes,
+            price: nft.price || '0.05',
+            priceWei: ethers.parseEther(nft.price || '0.05').toString(),
+            rarity: nft.attributes?.find((a: any) => a.trait_type === 'Rarity')?.value || 'Common',
+            minted: MintedNFTTracker.isMinted(nft.tokenId),
             owner: null,
           };
         });
@@ -60,27 +58,11 @@ export class NFTController {
           },
         });
       } catch (fileError) {
-        // If uploaded.json doesn't exist, try MongoDB
-        const query: any = {};
-        if (minted !== undefined) {
-          query.minted = minted === 'true';
-        }
-
-        const nfts = await NFTModel.find(query)
-          .limit(Number(limit))
-          .skip(Number(offset))
-          .sort({ tokenId: 1 });
-
-        const total = await NFTModel.countDocuments(query);
-
-        res.json({
-          success: true,
-          data: nfts,
-          pagination: {
-            total,
-            limit: Number(limit),
-            offset: Number(offset),
-          },
+        // If uploaded.json doesn't exist, return error
+        console.error('uploaded.json not found:', fileError);
+        return res.status(500).json({ 
+          success: false, 
+          error: 'NFT data not available. Please upload NFTs to IPFS first.' 
         });
       }
     } catch (error: any) {
