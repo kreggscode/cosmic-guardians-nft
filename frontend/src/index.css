@@ -90,6 +90,27 @@
     }
   }
 
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    33% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    66% {
+      transform: translateY(10px) translateX(-10px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+    }
+  }
+
   .animate-fade-in {
     animation: fade-in 0.8s ease-out;
   }
@@ -121,5 +142,21 @@
   .animate-gradient {
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
+  }
+
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .animate-float-delay {
+    animation: float 10s ease-in-out infinite 2s;
+  }
+
+  .animate-float-delay-2 {
+    animation: float 12s ease-in-out infinite 4s;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 }
