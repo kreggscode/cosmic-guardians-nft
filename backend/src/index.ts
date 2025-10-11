@@ -20,12 +20,15 @@ app.set('trust proxy', 1);
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || [
-    'http://localhost:5173', 
-    'http://localhost:5174',
-    'https://cosmic-guardians-nft.vercel.app',
-    'https://cosmic-guardians-nft-kreggscodes-projects.vercel.app'
-  ],
+  origin: process.env.FRONTEND_URL ? 
+    process.env.FRONTEND_URL.split(',') : 
+    [
+      'http://localhost:5173', 
+      'http://localhost:5174',
+      'https://cosmic-guardians-nft.vercel.app',
+      'https://cosmic-guardians-nft-kreggscodes-projects.vercel.app',
+      'https://cosmic-guardians-nft-git-main-kreggscodes-projects.vercel.app'
+    ],
   credentials: true
 }));
 app.use(morgan('dev'));
