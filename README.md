@@ -7,8 +7,14 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-[<img src="banner/1.png" width="400" alt="Cosmic Guardians NFT Platform">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
-[<img src="banner/2.png" width="400" alt="Cosmic Guardians NFT Collection">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
+<div align="center">
+  [<img src="banner/1.png" width="400" alt="Cosmic Guardians NFT Platform">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
+  [<img src="banner/2.png" width="400" alt="Cosmic Guardians NFT Collection">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
+  
+  <br><br>
+  
+  **[🚀 View Live App](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)**
+</div>
 
 ## ✨ Overview
 
