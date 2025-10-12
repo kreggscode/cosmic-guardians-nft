@@ -7,20 +7,31 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      [<img src="banner/1.png" width="100%" alt="Cosmic Guardians NFT Platform">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
-    </td>
-    <td width="50%" align="center">
-      [<img src="banner/2.png" width="100%" alt="Cosmic Guardians NFT Collection">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
-    </td>
-  </tr>
-</table>
+---
 
 <div align="center">
-  **[🚀 View Live App](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)**
+  <p align="center">
+    <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
+      <img src="banner/1.png" alt="Cosmic Guardians NFT Platform" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </a>
+  </p>
+  
+  <br>
+  
+  <p align="center">
+    <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
+      <img src="banner/2.png" alt="Cosmic Guardians NFT Collection" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </a>
+  </p>
+  
+  <br><br>
+  
+  <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀_View_Live_App-000000?style=for-the-badge&logo=github&logoColor=white" alt="View Live App">
+  </a>
 </div>
+
+---
 
 ## ✨ Overview
 
