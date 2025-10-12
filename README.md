@@ -7,6 +7,9 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
+[<img src="banner/1.png" width="400" alt="Cosmic Guardians NFT Platform">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
+[<img src="banner/2.png" width="400" alt="Cosmic Guardians NFT Collection">](https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/)
+
 ## ✨ Overview
 
 Cosmic Guardians is a premium NFT collection of 15 unique guardian warriors from across the cosmos. Each guardian features unique attributes, rarity levels, and cosmic powers. Built with cutting-edge Web3 technology and designed for seamless user experience.
