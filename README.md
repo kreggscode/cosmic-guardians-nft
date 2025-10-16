@@ -10,6 +10,21 @@
 ---
 
 <div align="center">
+
+## 🌟 **🚀 LIVE WEBSITE - VISIT NOW! 🚀**
+
+<a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
+  <img src="https://img.shields.io/badge/🌐_VISIT_LIVE_WEBSITE-FF6B6B?style=for-the-badge&logo=vercel&logoColor=white&labelColor=FF6B6B" alt="🚀 Visit Live Website">
+</a>
+
+### **👀 SEE THE COSMIC GUARDIANS NFT PLATFORM IN ACTION! 👀**
+
+<a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
+  <img src="https://img.shields.io/badge/🎯_MINT_NFTs_•_CONNECT_WALLET_•_VIEW_COLLECTION-4ECDC4?style=for-the-badge&logo=ethereum&logoColor=white&labelColor=4ECDC4" alt="🎯 Mint NFTs • Connect Wallet • View Collection">
+</a>
+
+---
+
   <p align="center">
     <img src="banner/1.png" alt="Cosmic Guardians NFT Platform" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </p>
