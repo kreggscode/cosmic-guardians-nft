@@ -11,24 +11,16 @@
 
 <div align="center">
   <p align="center">
-    <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
-      <img src="banner/1.png" alt="Cosmic Guardians NFT Platform" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    </a>
+    <img src="banner/1.png" alt="Cosmic Guardians NFT Platform" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </p>
-  
+
   <br>
-  
+
   <p align="center">
-    <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
-      <img src="banner/2.png" alt="Cosmic Guardians NFT Collection" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    </a>
+    <img src="banner/2.png" alt="Cosmic Guardians NFT Collection" width="90%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </p>
-  
+
   <br><br>
-  
-  <a href="https://cosmic-guardians-nft-kreggscodes-projects.vercel.app/">
-    <img src="https://img.shields.io/badge/🚀_View_Live_App-000000?style=for-the-badge&logo=github&logoColor=white" alt="View Live App">
-  </a>
 </div>
 
 ---
@@ -120,78 +112,122 @@ nft-project/
 └── README.md
 ```
 
-## Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+
-- MetaMask or other Web3 wallet
-- Infura/Alchemy API key
-- Pinata API key (for IPFS)
+- **Node.js 18+** - [Download here](https://nodejs.org/)
+- **MetaMask or other Web3 wallet** - [Install MetaMask](https://metamask.io/)
+- **Git** - [Download here](https://git-scm.com/)
+- **Code editor** - VS Code recommended
 
-### Installation
+### 📋 Step-by-Step Setup
 
-1. **Install dependencies:**
+#### 1. **Clone and Install Dependencies**
+
 ```bash
-# Install contract dependencies
-cd contracts
-npm install
+# Clone the repository
+git clone https://github.com/your-username/cosmic-guardians-nft.git
+cd cosmic-guardians-nft
 
-# Install backend dependencies
-cd ../backend
-npm install
-
-# Install frontend dependencies
-cd ../frontend
-npm install
+# Install all dependencies (contracts, backend, frontend)
+npm run install:all
 ```
 
-2. **Configure environment variables:**
+#### 2. **Get Required API Keys**
+
+You'll need these free API keys:
+
+| Service | Website | Purpose |
+|---------|---------|---------|
+| **Infura** | [infura.io](https://infura.io) | Blockchain RPC access |
+| **Pinata** | [pinata.cloud](https://pinata.cloud) | IPFS storage for NFTs |
+| **Etherscan** | [etherscan.io](https://etherscan.io) | Contract verification |
+| **WalletConnect** | [cloud.walletconnect.com](https://cloud.walletconnect.com) | Wallet connection |
+
+#### 3. **Configure Environment Variables**
 
 Create `.env` files in each directory:
 
 **contracts/.env:**
-```
-PRIVATE_KEY=your_wallet_private_key
-INFURA_API_KEY=your_infura_key
-ETHERSCAN_API_KEY=your_etherscan_key
+```env
+PRIVATE_KEY=your_metamask_private_key_here
+INFURA_API_KEY=your_infura_project_id
+ETHERSCAN_API_KEY=your_etherscan_api_key
+POLYGONSCAN_API_KEY=your_polygonscan_api_key
 ```
 
 **backend/.env:**
-```
+```env
 PORT=3001
+NODE_ENV=development
 MONGODB_URI=mongodb://localhost:27017/nft-project
-PINATA_API_KEY=your_pinata_key
-PINATA_SECRET_KEY=your_pinata_secret
-CONTRACT_ADDRESS=deployed_contract_address
-PRIVATE_KEY=your_signing_wallet_key
+CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
+CHAIN_ID=11155111
+RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+PRIVATE_KEY=your_metamask_private_key_here
+PINATA_API_KEY=your_pinata_api_key
+PINATA_SECRET_KEY=your_pinata_secret_key
+JWT_SECRET=your_jwt_secret_key_here
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
 ```
 
 **frontend/.env:**
-```
+```env
 VITE_API_URL=http://localhost:3001
-VITE_CONTRACT_ADDRESS=deployed_contract_address
-VITE_CHAIN_ID=1
-VITE_WALLETCONNECT_PROJECT_ID=your_project_id
+VITE_CONTRACT_ADDRESS=0x0000000000000000000000000000000000000000
+VITE_CHAIN_ID=11155111
+VITE_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
 ```
 
-3. **Deploy contracts:**
+#### 4. **How to Get Your MetaMask Private Key**
+
+⚠️ **WARNING: Never share your private key with anyone!**
+
+1. Open MetaMask extension
+2. Click the three dots (⋮) in top right
+3. Click "Account details"
+4. Click "Show private key"
+5. Enter your MetaMask password
+6. Copy the private key
+7. Paste it in both `contracts/.env` and `backend/.env`
+
+#### 5. **Deploy Smart Contracts**
+
 ```bash
+# Test deployment on Sepolia (free)
 cd contracts
 npx hardhat compile
-npx hardhat run scripts/deploy.js --network sepolia  # Test on Sepolia first
+npx hardhat run scripts/deploy.js --network sepolia
+
+# Copy the deployed contract address to your .env files
 ```
 
-4. **Start backend:**
+#### 6. **Start the Development Servers**
+
 ```bash
+# Start backend server (Terminal 1)
 cd backend
 npm run dev
-```
 
-5. **Start frontend:**
-```bash
+# Start frontend server (Terminal 2)
 cd frontend
 npm run dev
 ```
+
+#### 7. **Access Your App**
+
+- **Frontend:** http://localhost:5173
+- **Backend API:** http://localhost:3001
+- **MetaMask Network:** Make sure you're on Sepolia testnet!
+
+### 🎯 What You Should See
+
+After completing setup:
+- ✅ Frontend loads at http://localhost:5173
+- ✅ 15 Cosmic Guardian NFTs displayed
+- ✅ Wallet connection works
+- ✅ Backend API responds at http://localhost:3001
 
 ## How It Works
 
@@ -323,11 +359,8 @@ npx hardhat run scripts/deploy.js --network polygon
 
 ## 📚 Documentation
 
-Detailed guides available in the `/docs` folder:
-- `QUICK_START.md` - Get started in 5 minutes
-- `DEPLOYMENT_GUIDE.md` - Step-by-step deployment
-- `BLOCKCHAIN_GUIDE.md` - Understanding the smart contracts
-- `SETUP_YOUR_ENV.md` - Environment configuration
+- `BLOCKCHAIN_GUIDE.md` - Understanding the smart contracts and Web3 concepts
+- **API Documentation** - Available at `http://localhost:3001/api/docs` when backend is running
 
 ## 🤝 Contributing
 
@@ -344,12 +377,83 @@ MIT License - feel free to use this project for your own NFT collection!
 - [Web3Modal Documentation](https://docs.walletconnect.com/web3modal)
 - [Pinata IPFS](https://www.pinata.cloud/)
 
-## ⚠️ Security
+## 🛠️ Troubleshooting
 
-**NEVER commit your private keys or API secrets!**
+### Common Issues
 
-Always use `.env` files and add them to `.gitignore`. The `.env.example` files show what variables you need without exposing actual values.
+#### Backend won't start
+```bash
+# Check if port 3001 is available
+netstat -ano | findstr :3001
+
+# Kill process if needed (replace PID)
+taskkill /PID <PID> /F
+
+# Clear cache and reinstall
+cd backend
+rm -rf node_modules package-lock.json
+npm install
+npm run dev
+```
+
+#### MetaMask connection issues
+- Ensure you're on Sepolia testnet
+- Check if contract address is correct in `.env`
+- Verify RPC URL in MetaMask matches your Infura endpoint
+
+#### Contract deployment fails
+```bash
+# Check your private key format (should start with 0x)
+# Verify Infura API key is correct
+# Ensure you have Sepolia ETH for gas fees
+```
+
+#### NFTs not loading
+- Check backend is running on port 3001
+- Verify IPFS images are accessible
+- Check browser console for errors
+
+### Need Help?
+
+1. Check the browser console for errors
+2. Verify all `.env` files are configured correctly
+3. Ensure MetaMask is on the correct network
+4. Check backend logs for API errors
+
+## ⚠️ Security & Best Practices
+
+### 🚫 NEVER Commit These Files
+- `.env` files (anywhere in the project)
+- Private keys or API secrets
+- `minted-nfts.json`
+- Any file containing sensitive information
+
+### ✅ Always Use Environment Variables
+- Store all secrets in `.env` files
+- Use `.env.example` files to show required variables
+- Add `.env*` to `.gitignore`
+
+### 🔐 Private Key Management
+- **Never** use your main MetaMask wallet for development
+- Create separate wallets for testing and production
+- Use environment variables, never hardcode keys
+- Rotate keys regularly in production
+
+### 🛡️ Additional Security
+- Rate limiting is enabled on API endpoints
+- Input validation on all forms
+- Signature verification prevents unauthorized minting
+- Reentrancy guards on smart contract functions
 
 ---
+
+## 📞 Support
+
+If you encounter issues:
+
+1. **Check this README** - Most common issues are covered above
+2. **Browser Console** - Look for JavaScript errors
+3. **Backend Logs** - Check terminal output for API errors
+4. **Network Issues** - Verify MetaMask network settings
 
 Built with ❤️ for the Web3 community

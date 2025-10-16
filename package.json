@@ -1,0 +1,35 @@
+{
+  "name": "cosmic-guardians-nft",
+  "version": "1.0.0",
+  "description": "Full-stack NFT minting platform with lazy minting and multi-currency payments",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd contracts && npx hardhat compile && cd ../backend && npm run build && cd ../frontend && npm run build",
+    "test": "cd contracts && npx hardhat test && cd ../backend && npm test && cd ../frontend && npm test",
+    "clean": "rm -rf contracts/artifacts contracts/cache backend/node_modules frontend/node_modules node_modules"
+  },
+  "keywords": [
+    "nft",
+    "blockchain",
+    "web3",
+    "ethereum",
+    "react",
+    "typescript",
+    "hardhat"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/cosmic-guardians-nft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/cosmic-guardians-nft/issues"
+  },
+  "homepage": "https://github.com/your-username/cosmic-guardians-nft#readme"
+}

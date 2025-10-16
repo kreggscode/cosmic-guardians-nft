@@ -49,5 +49,34 @@ art-generator/uploaded.json
 *.pem
 private-key.txt
 
+# Environment files with API keys
+backend/.env
+contracts/.env
+frontend/.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Markdown files containing API keys and sensitive information
+SETUP_YOUR_ENV.md
+MANUAL_BACKEND_SETUP.md
+FINAL_SETUP_GUIDE.md
+RENDER_ENV_SETUP.md
+DEPLOY_STATUS.md
+DEPLOY_NOW.md
+DEPLOYMENT_CHECKLIST.md
+DEPLOYMENT_GUIDE.md
+DEPLOYMENT_SUMMARY.md
+FIX_NETWORK_ERROR.md
+GITHUB_PUSH_GUIDE.md
+NEXT_STEPS_TO_MINT.md
+PROJECT_SUCCESS.md
+QUICK_START.md
+TESTNET_DEPLOYMENT_SUCCESS.md
+BACKEND_ALTERNATIVES.md
+FINAL_SUMMARY.md
+CLEANUP_BEFORE_PUSH.md
+
 # Source images (already uploaded to IPFS)
 Pictures/
